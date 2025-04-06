@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  app1:
+    image: nginx-demo:1
+    environment:
+      - APP_NAME=App1
+    ports:
+      - "3001:3000"
+
+  app2:
+    image: nginx-demo:1
+    environment:
+      - APP_NAME=App2
+    ports:
+      - "3002:3000"
+
+  app3:
+    image: nginx-demo:1
+    environment:
+      - APP_NAME=App3
+    ports:
+      - "3003:3000"
